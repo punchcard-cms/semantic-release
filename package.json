@@ -71,7 +71,7 @@
     }
   },
   "release": {
-    "analyzeCommits": "./lib/analyze.js",
-    "generateNotes": "./lib/notes.js"
+    "analyzeCommits": "./analyze.js",
+    "generateNotes": "./notes.js"
   }
 }
