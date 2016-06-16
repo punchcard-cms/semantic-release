@@ -38,7 +38,8 @@
   "homepage": "https://github.com/punchcard-cms/semantic-release#readme",
   "dependencies": {
     "dateformat": "^1.0.12",
-    "github-url-from-git": "^1.4.0"
+    "github-url-from-git": "^1.4.0",
+    "lodash": "^4.13.1"
   },
   "devDependencies": {
     "ava": "^0.15.2",
