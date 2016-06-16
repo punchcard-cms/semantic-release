@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '5.11'
+sudo: false
+cache:
+  directories:
+  - node_modules
+before_script:
+  - npm prune
+after_success:
+  - npm run coverage
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
+notifications:
+  email: false
+  slack:
+    secure: pkJNf9/cmNCBc5PN2PCXNMsC2130TFbbyMQ1NMoBQrfViq1Z7aei7bDiw7zujpV26zH644YH5fD8JT3+RYiBnWbRyF7I4NRj5BBjX5C8tazZQmTENKz08J351/gt5yuWr4EFg8XHy8ylYsycbMhl390kh0KG4wy2D3jbY2sbKw1g7QqaygABzOk6YIN1zXHfWLYeSsbXHBt1CvNyXtS5F+YeabMyuCMIhlygN3qTaMJ0Fa2TcZVUTMGfNinaSDCLfJxj604i8bBLVrdRdoe64n9GCjava1DK2VuaL8TzcI4uuFtlhg8NPBAe6o7KPWIqraTnvmxyoDZHNsJ7DKwVnG8tD5VqUkc/wBRGov5rUIV4vQO2Nf/XKqIoxElkSDnPm7KFr01q655tVt7jgl3/y12HzSKWajjuXND1SzdATOj5b5eAFGdvqDtPKvOqEN7U6jI65DNlq1NAWLrbXd+MRaClpjkKOWd+5vQMlO0o7V/NVYi1bCXM6WofsTiQP+spdWGqt8cbKrP/wSYCs63vsPlICTWm0QqpydU9WxLhypZVq0XJ1Wsdtjfbai3N4I7sG/F7rh5d1vYYpjsLnOGdMVPvPwpcN6xFWYrFpADsMn/sOSBWAzGzXqxMbEL3cfPNNs+6tWmY5KoOO+BYTn60/S9WL2RX1nX8lYz588pEqyY=
