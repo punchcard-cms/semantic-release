@@ -1,5 +1,5 @@
 import test from 'ava';
-import analyze from '../lib/analyze';
+import analyze from '../analyze';
 
 test.cb('Analyzes - Patch', t => {
   const info = {

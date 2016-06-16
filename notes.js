@@ -2,7 +2,7 @@
 
 const dateformat = require('dateformat');
 const parseUrl = require('github-url-from-git');
-const util = require('./util');
+const util = require('./lib/util');
 const fs = require('fs');
 const path = require('path');
 

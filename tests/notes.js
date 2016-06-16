@@ -1,7 +1,7 @@
 import test from 'ava';
 import fs from 'fs';
 import dateformat from 'dateformat';
-import notes from '../lib/notes';
+import notes from '../notes';
 import info from './fixtures/info';
 
 test.cb('Generate Release Notes', t => {

@@ -1,6 +1,6 @@
 'use strict';
 
-const util = require('./util');
+const util = require('./lib/util');
 const fs = require('fs');
 const path = require('path');
 const _ = require('lodash');
