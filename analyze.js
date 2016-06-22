@@ -5,6 +5,8 @@ const fs = require('fs');
 const path = require('path');
 const _ = require('lodash');
 
+const gk = /chore\(package\): update([\w\s\W]*)( to version )([\w\W\d]*)/;
+
 const semanticEmoji = {
   major: [
     ':boom:',
@@ -64,6 +66,11 @@ module.exports = (pluginConfig, info, cb) => {
     const msg = commit.message.trim();
     const emoji = util.getEmoji(msg);
     const highType = highestType(emoji);
+
+    // If it's a Greenkeeper commit, it's a patch
+    if (gk.test(msg)) {
+      return 4;
+    }
 
     return highType;
   }).filter(high => {
