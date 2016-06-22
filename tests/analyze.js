@@ -10,6 +10,7 @@ test.cb('Analyzes - Patch', t => {
       { message: ':shirt: cleanup, remove delete\n' },
       { message: ':unamused: merging with latest\n' },
       { message: 'temp fix\n' },
+      { message: 'chore(package): update punchcard-semantic-release to version 2.0.1' },
     ],
   };
 
