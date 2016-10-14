@@ -11,7 +11,8 @@
     "ava": "ava | tap-diff",
     "nyc": "nyc --all npm run ava",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "reparo": "reparo -b master"
   },
   "repository": {
     "type": "git",
@@ -73,5 +74,8 @@
   "release": {
     "analyzeCommits": "./analyze.js",
     "generateNotes": "./notes.js"
+  },
+  "engines": {
+    "node": "^6"
   }
 }
