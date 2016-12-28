@@ -21,6 +21,7 @@ const semanticEmoji = {
     ':shirt:',
     ':art:',
     ':unamused:',
+    ':wrench:',
   ],
   prerelease: [
     ':crystal_ball:',
