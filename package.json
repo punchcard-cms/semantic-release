@@ -12,7 +12,9 @@
     "nyc": "nyc --all npm run ava",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "reparo": "reparo -b master"
+    "reparo": "reparo -b master",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -40,7 +42,8 @@
   "dependencies": {
     "dateformat": "^1.0.12",
     "github-url-from-git": "^1.4.0",
-    "lodash": "^4.13.1"
+    "lodash": "^4.13.1",
+    "snyk": "^1.319.0"
   },
   "devDependencies": {
     "ava": "^0.15.2",
@@ -77,5 +80,6 @@
   },
   "engines": {
     "node": "^6"
-  }
+  },
+  "snyk": true
 }
